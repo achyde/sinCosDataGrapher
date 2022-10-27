@@ -1,0 +1,49 @@
+{
+  "name": "electron-vue-vite",
+  "version": "2.1.0",
+  "main": "dist-electron/main/index.js",
+  "description": "Simple plot of data from udp read.",
+  "author": "Andrew Hyde",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build && electron-builder"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "autoprefixer": "^10.4.12",
+    "electron": "^21.1.0",
+    "electron-builder": "^23.3.3",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4",
+    "vite-electron-plugin": "^0.4.6",
+    "vite-plugin-electron-renderer": "^0.10.1",
+    "vue": "^3.2.40",
+    "vue-tsc": "^0.40.13"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344"
+    }
+  },
+  "keywords": [
+    "electron",
+    "rollup",
+    "vite",
+    "vue3",
+    "vue"
+  ],
+  "dependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/plotly.js-dist-min": "^2.3.1",
+    "@vueuse/core": "^9.3.1",
+    "lodash-es": "^4.17.21",
+    "plotly.js-dist-min": "^2.16.1"
+  }
+}
